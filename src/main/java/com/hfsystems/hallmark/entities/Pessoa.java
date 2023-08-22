@@ -1,12 +1,16 @@
 package com.hfsystems.hallmark.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.hfsystems.hallmark.dto.RequestPessoaDTO;
 import jakarta.persistence.*;
+import org.springframework.beans.BeanUtils;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name = "pessoa")
-public class Pessoa {
+@Table(name = "TB_PESSOA")
+public class Pessoa implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,6 +19,10 @@ public class Pessoa {
     private String telefone;
 
     public Pessoa() {
+    }
+
+    public Pessoa(RequestPessoaDTO requestPessoaDTO) {
+        BeanUtils.copyProperties(requestPessoaDTO, this);
     }
 
     public Pessoa(Long id, String nome, String telefone) {
