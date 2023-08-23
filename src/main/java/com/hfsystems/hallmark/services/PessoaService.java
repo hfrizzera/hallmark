@@ -15,8 +15,11 @@ import java.util.Optional;
 @Service
 public class PessoaService {
 
-    @Autowired
-    private PessoaRepository pessoaRepository;
+    private final PessoaRepository pessoaRepository;
+
+    public PessoaService(PessoaRepository pessoaRepository) {
+        this.pessoaRepository = pessoaRepository;
+    }
 
     @Transactional(readOnly = true)
     public PessoaDTO findById(Long id){
