@@ -2,8 +2,6 @@ package com.hfsystems.hallmark.dto;
 
 import com.hfsystems.hallmark.entities.Pessoa;
 import com.hfsystems.hallmark.entities.Usuario;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import org.springframework.beans.BeanUtils;
 
 public class UsuarioDTO {
