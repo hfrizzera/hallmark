@@ -4,10 +4,8 @@ import com.hfsystems.hallmark.dto.PessoaDTO;
 import com.hfsystems.hallmark.dto.RequestPessoaDTO;
 import com.hfsystems.hallmark.entities.Pessoa;
 import com.hfsystems.hallmark.repositories.PessoaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,13 +1,9 @@
 package com.hfsystems.hallmark.services;
 
-import com.hfsystems.hallmark.dto.PessoaDTO;
-import com.hfsystems.hallmark.dto.RequestPessoaDTO;
 import com.hfsystems.hallmark.dto.RequestUsuarioDTO;
 import com.hfsystems.hallmark.dto.UsuarioDTO;
-import com.hfsystems.hallmark.entities.Pessoa;
 import com.hfsystems.hallmark.entities.Usuario;
 import com.hfsystems.hallmark.repositories.UsuarioRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
