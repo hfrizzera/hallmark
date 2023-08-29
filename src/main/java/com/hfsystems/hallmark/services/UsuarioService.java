@@ -40,6 +40,7 @@ public class UsuarioService {
             usuario.setLogin(requestUsuarioDTO.login());
             usuario.setSenha(requestUsuarioDTO.senha());
             usuario.setFoto(requestUsuarioDTO.foto());
+            usuario.setTipo(requestUsuarioDTO.tipo());
             usuario.setPessoa(requestUsuarioDTO.pessoa());
             return usuario;
         }else{

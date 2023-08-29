@@ -2,6 +2,7 @@ package com.hfsystems.hallmark.dto;
 
 import com.hfsystems.hallmark.entities.Pessoa;
 import com.hfsystems.hallmark.entities.Usuario;
+import com.hfsystems.hallmark.enums.TipoUsuario;
 import org.springframework.beans.BeanUtils;
 
 public class UsuarioDTO {
@@ -10,6 +11,7 @@ public class UsuarioDTO {
     private String login;
     private String senha;
     private String foto;
+    private TipoUsuario tipo;
     private Pessoa pessoa;
 
     public UsuarioDTO() {
@@ -49,6 +51,14 @@ public class UsuarioDTO {
 
     public void setFoto(String foto) {
         this.foto = foto;
+    }
+
+    public TipoUsuario getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoUsuario tipo) {
+        this.tipo = tipo;
     }
 
     public Pessoa getPessoa() {
